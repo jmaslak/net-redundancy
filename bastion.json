@@ -1,0 +1,17 @@
+{
+    "delay": 30,
+    "device": {
+        "hostname": "192.168.157.1",
+        "port": "8080",
+        "key": "secret"
+    },
+    "interface": "eth1",
+    "destination_rules": [ "1030", "1040" ],
+    "group": "bastion",
+    "dnssec": {
+        "keyname": "DDNS_UPDATE",
+        "key": "secret",
+        "server": "authdns.antelope.net",
+        "hostname": "bastion"
+    }
+}
