@@ -1,0 +1,14 @@
+[Unit]
+Description=Netowrk Redundancy Service
+After=NetworkManager.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=/usr/local/bin/net-redundancy.pl
+
+[Install]
+WantedBy=multi-user.target
