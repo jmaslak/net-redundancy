@@ -1,0 +1,31 @@
+{    
+    "toot": "/usr/bin/toot",
+    "sampling": {
+        "delay": 30,
+        "history": 10,
+        "pings": 5,
+        "delta": 5
+    },
+    "holddown": {
+        "delay": 600,
+        "penalty": 10,
+        "minimum": 1
+    },
+    "device": {
+        "hostname": "192.168.157.1",
+        "port": 8080,
+        "key":  "secret"
+    },
+    "gateway": [
+        {
+            "address": "4.2.2.3",
+            "targets": [ "4.2.2.3", "75.75.75.75" ],
+            "toot": "Centurylink appears to be working again, switching back."
+        },
+        {
+            "address": "10.172.176.1",
+            "targets": [ "4.2.2.2", "75.75.76.76" ],
+            "toot": "Switching from Centurylink to Starlink because of Centurylink packet loss"
+        }
+    ]
+}
